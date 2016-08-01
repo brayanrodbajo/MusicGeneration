@@ -1,16 +1,19 @@
-from nltk import *
+#from nltk import *
+from nltk import Nonterminal
 from nltk.corpus import treebank
 from nltk.treetransforms import *
 #from nltk import bracket_parse
 from nltk.tree import Tree
 from nltk import grammar
 from numpy.random import choice
+import glob, os
 #import dynamic_pcfg
 
 # Three parse trees that you'll use for the first question.
-folder = "ArbolesTxtPuntos/"
-three_trees = [Tree.fromstring(t) for t in #SE DEBE LEER TODA LA CARPETA, NO ARCHIVO POR ARCHIVO
-[open(folder+"calipachanguero.txt").read(), open(folder+"buscapordentro.txt").read(), open(folder+"anamile.txt").read(),open(folder+"apruebadefuego.txt").read(),open(folder+"hagamosloquedigaelcorazon.txt").read(),open(folder+"miserable.txt").read()]]
+folder = "ArbolesTxtPuntosNoComillas/"
+os.chdir(folder)
+three_trees = [Tree.fromstring(t) for t in
+[open(file).read() for file in glob.glob("*.txt")]] #the whole folder is read. Only txt files.
 
 def learn_trees(trees, collapse=True, markov_order=None):
     """
@@ -39,7 +42,7 @@ def learn_trees(trees, collapse=True, markov_order=None):
 
 
 #Para quitar el + de la gramática y sea reconocida como tal por el metodo fromstring
-def quitar_simbolos(text):
+def remove_symbols(text):
     text = text.replace('+', '')
     return text
 
@@ -68,7 +71,7 @@ def quitar_simbolos(text):
 def generate_sample(grammar, items, frags):
     # print ("items ",items)
     #global frags
-    for item in items: 
+    for item in items:
         # print ("item ", item)
         # print ("nonterminal ",isinstance(item, Nonterminal))
         if isinstance(item, Nonterminal):
@@ -91,9 +94,10 @@ if __name__ =='__main__':
     # grammar_str = grammar_file.read()
     # grammar_file.close()
     # print ("GRAMÁTICA CON + \n"+grammar_str)
-    # grammar_str= quitar_simbolos(grammar_str)
+    # grammar_str= remove_symbols(grammar_str)
     # print ("GRAMÁTICA SIN + \n"+grammar_str)
     # grammar = PCFG.fromstring(grammar_str)
+
     grammar = learn_trees(three_trees)
     f = open("pcfg.txt", "w")
     f.write(str(grammar))
@@ -102,5 +106,3 @@ if __name__ =='__main__':
     s = [s]
     chords = generate_sample(grammar, s, [])
     print (chords)
-
-

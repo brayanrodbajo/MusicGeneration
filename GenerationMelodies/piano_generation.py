@@ -2,7 +2,7 @@ from __future__ import print_function #To write file by print
 import os, sys
 
 
-chords = ['i', 'III', 'i', 'i', 'VI', 'iv', 'VI', 'VI', 'i', 'i', 'III', 'i', 'VI', 'iv', 'iv', 'iv', 'V7', 'VII', 'VI', 'iv', 'iv', 'iv', 'V7', 'VII', 'i', 'i', 'i', 'III', 'i', 'i', 'i', 'i', 'V7', 'iv', 'V7', 'V7', 'iv', 'V7', 'VII', 'V7', 'VII', 'V7', 'V7', 'VII', 'V7', 'VII', 'V7', 'i', 'i', 'i', 'i', 'III', 'i', 'III', 'i', 'i', 'III', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'III', 'III', 'i', 'i', 'i', 'i', 'III', 'i', 'i', 'III', 'VI', 'VII', 'V7', 'V7', 'VII', 'i', 'III', 'VII', 'III', 'ii', 'ii', 'VII', 'i', 'i', 'III', 'i', 'i', 'i', 'i', 'i', 'VI', 'V7', 'V7', 'i', 'i', 'VI', 'VI', 'VI', 'iv', 'VII', 'V7', 'i', 'i', 'i', 'i', 'VI', 'V7', 'VII', 'VII', 'V7', 'i', 'i', 'III', 'i', 'i', 'i', 'i', 'i', 'VI', 'VI', 'IV7', 'V7', 'V7', 'V7', 'i', 'i', 'III', 'i', 'VI', 'VI', 'VII', 'VII', 'V7', 'V7', 'VII', 'VII', 'IV7', 'VII']
+chords = ['VII', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', '.', 'i', 'i', 'III', 'i', 'V7', 'V7', 'V7', 'VII', 'VII', 'V7', 'VII', 'VII', 'i', 'i', 'VI', 'VI', 'VI', 'iv', 'iv', 'iv', 'iv', 'VI', 'VII', 'VII', '.', 'III', 'i', 'iv', 'VI', 'V7', 'V7', 'V7', 'V7', 'VII', 'VII', 'VII', 'V7', 'VI', 'VII', 'i', 'i', 'i', 'III', 'iv', 'VII', 'V7', 'V7', 'V7', 'V7', 'V7', 'VII', 'VII', 'V7', 'VII', 'i', 'i', 'iv', 'V7', 'V7', 'iv', 'ii', 'VII', 'V7', 'III', 'i', 'iv', 'iv', 'VII', 'VII', 'III', 'i', 'iv', 'iv', 'V7', 'V7', 'V7', 'VII', 'i', 'i', 'VII', 'ii', 'i', 'i', 'V7', 'VI', 'ii', 'V7', 'V7', '.', 'i', 'i', 'i', 'VI', 'V7', 'V7', 'VII', 'V7', 'i', 'i', 'i', 'i', 'i', 'III', 'i', 'i', 'VII', 'VII', 'i', 'i', 'i', 'i', '.', 'i', 'i', 'V7', 'IV7', 'VII', 'V7', 'iv', 'V7', 'iv', 'III', 'i', 'iv', 'VI', 'V7', 'V7', 'VII', 'IV7', 'i', 'i', '.', 'i', 'III', 'i', 'i', 'i', 'III', 'i', 'i', 'iv', 'V7', 'i', 'i', 'i', 'i', 'i', 'i', 'VI', 'V7', 'V7', 'V7', 'VII', '.', 'VI', 'IV7', 'III', 'i', 'i', 'III', 'VII', 'III', 'i', 'i', 'III', 'iv', 'ii', 'ii', 'ii', 'VII', 'i', 'ii', 'V7', 'V7', 'III', 'i', 'VII', 'i', 'i', 'i', 'i', 'VI', 'iv', 'iv', 'VI', 'IV7', 'V7', 'V7', 'IV7', 'i', 'i', 'VII', 'i', 'i', 'i', 'III', 'V7', 'IV7', 'i', 'i', 'VI', 'V7', 'VII', 'i', 'i', 'i', 'i', 'VII', 'VII', 'i', 'i', 'III', 'i', 'V7', 'V7', 'i', 'III', 'VI', 'IV7', 'V7', 'V7', 'VII', 'III', 'III', '.', 'VI', '.']
 
 #The rythmic circle is the third and the fourth chord of every four chords set has one specific variation of the default rythm respectively
 def annotate_rythm_variations(chords):
@@ -43,32 +43,32 @@ def convert_ly_notation(chords, ton):
   #p para el compas que empieza de primero
   #1 para el acorde que empieza con dos corcheas en octava
   #2 para el acorde que empieza con dos corcheas en octava y la tercera, quinta simultaneas en corchea y octava corchea
-  # default para que empieza 
-  char2notes = { 
+  # default para que empieza
+  char2notes = {
     #1st grade
     'ip':("<"+v+"' "+v+"''>8 "+i+"'8 "+iii+"'8 ",i+"4. "),
     'i':("<"+v+"' "+v+"''>4 "+i+"'8 "+iii+"'8 ", i+"2 "),
-    'i1':("<"+v+"' "+v+"''>8 <"+v+"' "+v+"''>8 "+i+"'8 "+iii+"'8 ", i+"2 "), 
-    'i2':("<"+v+"' "+v+"''>8 <"+v+"' "+v+"''>8 <"+i+"' "+iii+"'>8 <"+v+"' "+v+"''>8 ", i+"2 "), 
+    'i1':("<"+v+"' "+v+"''>8 <"+v+"' "+v+"''>8 "+i+"'8 "+iii+"'8 ", i+"2 "),
+    'i2':("<"+v+"' "+v+"''>8 <"+v+"' "+v+"''>8 <"+i+"' "+iii+"'>8 <"+v+"' "+v+"''>8 ", i+"2 "),
     #2nd grade
     'iip':("<"+vi+"' "+vi+"''>8 "+ii+"'8 "+iv+"'8 ",ii+"4. "),
     'ii':("<"+vi+"' "+vi+"''>4 "+ii+"'8 "+iv+"'8 ", ii+"2 "),
-    'ii1':("<"+vi+"' "+vi+"''>8 <"+vi+"' "+vi+"''>8 "+ii+"'8 "+iv+"'8 ", ii+"2 "), 
+    'ii1':("<"+vi+"' "+vi+"''>8 <"+vi+"' "+vi+"''>8 "+ii+"'8 "+iv+"'8 ", ii+"2 "),
     'ii2':("<"+vi+"' "+vi+"''>8 <"+vi+"' "+vi+"''>8 <"+ii+"' "+iv+"'>8 <"+vi+"' "+vi+"''>8 ", ii+"2 "),
     #3rd grade
     'IIIp':("<"+v+"' "+v+"''>8 "+vii+"'8 "+iii+"'8 ",iii+"4. "),
     'III':("<"+v+"' "+v+"''>4 "+vii+"'8 "+iii+"'8 ", iii+"2 "),
-    'III1':("<"+v+"' "+v+"''>8 <"+v+"' "+v+"''>8 "+vii+"'8 "+iii+"'8 ", iii+"2 "), 
-    'III2':("<"+v+"' "+v+"''>8 <"+v+"' "+v+"''>8 <"+vii+"' "+iii+"'>8 <"+v+"' "+v+"''>8 ", iii+"2 "), 
+    'III1':("<"+v+"' "+v+"''>8 <"+v+"' "+v+"''>8 "+vii+"'8 "+iii+"'8 ", iii+"2 "),
+    'III2':("<"+v+"' "+v+"''>8 <"+v+"' "+v+"''>8 <"+vii+"' "+iii+"'>8 <"+v+"' "+v+"''>8 ", iii+"2 "),
     #4th grade
     'ivp':("<"+vi+"' "+vi+"''>8 "+i+"'8 "+iv+"'8 ",iv+"4. "),
     'iv':("<"+vi+"' "+vi+"''>4 "+i+"'8 "+iv+"'8 ", iv+"2 "),
-    'iv1':("<"+vi+"' "+vi+"''>8 <"+vi+"' "+vi+"''>8 "+i+"'8 "+iv+"'8 ", iv+"2 "), 
+    'iv1':("<"+vi+"' "+vi+"''>8 <"+vi+"' "+vi+"''>8 "+i+"'8 "+iv+"'8 ", iv+"2 "),
     'iv2':("<"+vi+"' "+vi+"''>8 <"+vi+"' "+vi+"''>8 <"+i+"' "+iv+"'>8 <"+vi+"' "+vi+"''>8 ", iv+"2 "),
     #4th grade
     'IV7p':("<"+vis+"' "+vis+"''>8 "+i+"'8 "+iv+"'8 ",iv+"4. "),
     'IV7':("<"+vis+"' "+vis+"''>4 "+i+"'8 "+iv+"'8 ", iv+"2 "),
-    'IV71':("<"+vis+"' "+vis+"''>8 <"+vis+"' "+vis+"''>8 "+i+"'8 "+iv+"'8 ", iv+"2 "), 
+    'IV71':("<"+vis+"' "+vis+"''>8 <"+vis+"' "+vis+"''>8 "+i+"'8 "+iv+"'8 ", iv+"2 "),
     'IV72':("<"+vis+"' "+vis+"''>8 <"+vis+"' "+vis+"''>8 <"+i+"' "+iv+"'>8 <"+vis+"' "+vis+"''>8 ", iv+"2 "),
     #5th grade
     'V7p':("<"+v+"' "+v+"''>8 "+viis+"'8 "+ii+"'8 ",v+"4. "),
@@ -78,19 +78,19 @@ def convert_ly_notation(chords, ton):
     #6th grade
     'VIp':("<"+vi+"' "+vi+"''>8 "+i+"'8 "+iii+"'8 ",vi+"4. "),
     'VI':("<"+vi+"' "+vi+"''>4 "+i+"'8 "+iii+"'8 ", vi+"2 "),
-    'VI1':("<"+vi+"' "+vi+"''>8 <"+vi+"' "+vi+"''>8 "+i+"'8 "+iii+"'8 ", vi+"2 "), 
+    'VI1':("<"+vi+"' "+vi+"''>8 <"+vi+"' "+vi+"''>8 "+i+"'8 "+iii+"'8 ", vi+"2 "),
     'VI2':("<"+vi+"' "+vi+"''>8 <"+vi+"' "+vi+"''>8 <"+i+"' "+iii+"'>8 <"+vi+"' "+vi+"''>8 ", vi+"2 "),
     #7th grade
     'VIIp':("<"+vii+"' "+vii+"''>8 "+ii+"'8 "+iv+"'8 ",vii+"4. "),
     'VII':("<"+vii+"' "+vii+"''>4 "+ii+"'8 "+iv+"'8 ", vii+"2 "),
-    'VII1':("<"+vii+"' "+vii+"''>8 <"+vii+"' "+vii+"''>8 "+ii+"'8 "+iv+"'8 ", vii+"2 "), 
+    'VII1':("<"+vii+"' "+vii+"''>8 <"+vii+"' "+vii+"''>8 "+ii+"'8 "+iv+"'8 ", vii+"2 "),
     'VII2':("<"+vii+"' "+vii+"''>8 <"+vii+"' "+vii+"''>8 <"+ii+"' "+iv+"'>8 <"+vii+"' "+vii+"''>8 ", vii+"2 "),
-    
+
   }
 
   upper_staff = ""
-  lower_staff = "" 
-  #Every chord will be annotated in the ly file 
+  lower_staff = ""
+  #Every chord will be annotated in the ly file
   for chord in chords:
       (u,l) = char2notes[chord]
       upper_staff += u
@@ -100,10 +100,11 @@ def convert_ly_notation(chords, ton):
 #To write in the ly file the staffs of the piano melody
 #All the arguments must be strings
 def write_piano_ly(upper_staff, lower_staff, title, composer, copyright, time, tempo, file_name ):
-  staff = "\score{"
+  staff = '\\version "2.18.2"'
+  staff += "\n\score{"
   staff += "\n\\new PianoStaff << \n"
-  staff += "  \\new Staff {\scoreTempo \\time "+time+" {" + upper_staff + "}}\n"  
-  staff += "  \\new Staff { \clef bass \scoreTempo \\time "+time+" {" + lower_staff + "}}\n"  
+  staff += "  \\new Staff {\scoreTempo \\time "+time+" {" + upper_staff + "}}\n"
+  staff += "  \\new Staff { \clef bass \scoreTempo \\time "+time+" {" + lower_staff + "}}\n"
   staff += ">>\n"
   staff += "\\midi{} \n}\n"
 
@@ -131,9 +132,9 @@ if __name__ == '__main__':
   copyright = 'Brayan Rodríguez'
   time= '2/2'
   tempo = '100'
-  chords_variations = annotate_rythm_variations(chords)
+  chords_without_points = [x for x in chords if x != '.']
+  chords_variations = annotate_rythm_variations(chords_without_points)
   (upper_staff, lower_staff) = convert_ly_notation(chords_variations, tonality)
   file_name = "piano_salsa"
   write_piano_ly(upper_staff, lower_staff, title, composer, copyright, time, tempo, file_name)
   generate_midi()
-  
