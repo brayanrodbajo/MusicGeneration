@@ -11,9 +11,10 @@ import glob, os
 
 # Three parse trees that you'll use for the first question.
 folder = "ArbolesTxtPuntosNoComillas/"
-os.chdir(folder)
+#os.chdir(folder)
+#trees=[file for file in glob.glob("folder+*.txt")]#] #the whole folder is read. Only txt files.
 three_trees = [Tree.fromstring(t) for t in
-[open(file).read() for file in glob.glob("*.txt")]] #the whole folder is read. Only txt files.
+[open(folder+file).read() for file in os.listdir(folder) if file.endswith(".txt")]] #the whole folder is read. Only txt files.
 
 def learn_trees(trees, collapse=True, markov_order=None):
     """
@@ -88,7 +89,6 @@ def generate_sample(grammar, items, frags):
             frags.append(item)
     return frags
 
-
 if __name__ =='__main__':
     # grammar_file = open("pcfg.txt", "r")
     # grammar_str = grammar_file.read()
@@ -97,7 +97,6 @@ if __name__ =='__main__':
     # grammar_str= remove_symbols(grammar_str)
     # print ("GRAMÁTICA SIN + \n"+grammar_str)
     # grammar = PCFG.fromstring(grammar_str)
-
     grammar = learn_trees(three_trees)
     f = open("pcfg.txt", "w")
     f.write(str(grammar))
