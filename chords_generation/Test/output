@@ -1,0 +1,38 @@
+items  [S]
+item  S
+nonterminal  True
+prods  [S -> NP VP [1.0]]
+1.0
+chosen prods  S -> NP VP [1.0]
+items  (NP, VP)
+item  NP
+nonterminal  True
+prods  [NP -> 'Fred' [0.166667], NP -> 'Sally' [0.333333], NP -> 'Jeff' [0.166667], NP -> 'John' [0.166667], NP -> 'Bill' [0.166667]]
+0.166667
+0.333333
+0.166667
+0.166667
+0.166667
+chosen prods  NP -> 'John' [0.166667]
+items  ('John',)
+item  John
+nonterminal  False
+item  VP
+nonterminal  True
+prods  [VP -> V1 SBAR [0.333333], VP -> V2 [0.333333], VP -> VP ADVP [0.333333]]
+0.333333
+0.333333
+0.333333
+chosen prods  VP -> V2 [0.333333]
+items  (V2,)
+item  V2
+nonterminal  True
+prods  [V2 -> 'ran' [0.333333], V2 -> 'snored' [0.333333], V2 -> 'swam' [0.333333]]
+0.333333
+0.333333
+0.333333
+chosen prods  V2 -> 'ran' [0.333333]
+items  ('ran',)
+item  ran
+nonterminal  False
+['John', 'ran']

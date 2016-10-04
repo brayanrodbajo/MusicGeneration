@@ -1,4 +1,4 @@
-(S 
+(S
 	(Intro
 		(AT
 			(T i)
@@ -30,7 +30,7 @@
 			(T i)
 			(T i)
 		)
-		(FINPUNTO .)
+		(FININTRO .)
 	)
 	(Verso
 		(AT
@@ -137,23 +137,23 @@
 			(D V7)
 			(D V7)
 		)
-		(CD
-			(ASD
-				(SD ii)
-			)
-			(AD
-				(D V7)
-			)
-			(AT
-				(T VI)
-				(T VI)
-				(T VI)
-				(T VI)
-				(T i)
-				(T i)
-				(T i)
-				(T i)
-			)
+		(ASD
+			(SD ii)
+		)
+		(AD
+			(D V7)
+		)
+		(ASD
+			(SD VI)
+			(SD VI)
+			(SD VI)
+			(SD VI)
+		)
+		(AT
+			(T i)
+			(T i)
+			(T i)
+			(T i)
 		)
 		(CD
 			(ASD

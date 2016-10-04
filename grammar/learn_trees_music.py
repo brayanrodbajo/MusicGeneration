@@ -7,9 +7,11 @@ from nltk import grammar
 #import dynamic_pcfg
 
 # Three parse trees that you'll use for the first question.
-folder = "ArbolesTxtPuntos/"
-three_trees = [Tree.fromstring(t) for t in #SE DEBE LEER TODA LA CARPETA, NO ARCHIVO POR ARCHIVO
-[open(folder+"calipachanguero.txt").read(), open(folder+"buscapordentro.txt").read(), open(folder+"anamile.txt").read(),open(folder+"apruebadefuego.txt").read(),open(folder+"hagamosloquedigaelcorazon.txt").read(),open(folder+"miserable.txt").read(),open(folder+"sinsentimiento.txt").read()]]
+folder = "ArbolesTxtPuntosNoComillas/"
+#os.chdir(folder)
+#trees=[file for file in glob.glob("folder+*.txt")]#] #the whole folder is read. Only txt files.
+three_trees = [Tree.fromstring(t) for t in
+[open(folder+file).read() for file in os.listdir(folder) if file.endswith(".txt")]] #the whole folder is read. Only txt files.
 
 def learn_trees(trees, collapse=True, markov_order=None):
     """
@@ -58,10 +60,8 @@ def learn_trees(trees, collapse=True, markov_order=None):
 if __name__ =='__main__':
   grammar = learn_trees(three_trees)
   grammar_str = str(grammar)
-  grammar_str = grammar_str.splitlines(True) #The first line of grammar_str is a not important line 
+  grammar_str = grammar_str.splitlines(True) #The first line of grammar_str is a not important line
   grammar_str = ''.join(grammar_str[1:]) # Then, here is removed
   f = open("pcfg.txt", "w")
   f.write(str(grammar_str))
   f.close()
-
-

@@ -1,0 +1,1446 @@
+(S
+	(Ana
+		(AT
+			(T III)
+			(T III)
+		)
+	)
+	(Intro
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+				(T i)
+				(T i)
+				(T i)
+				(T i)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+				(T i)
+				(T i)
+			)
+		)
+		(CF
+			(AT
+				(T i)
+			)
+			(AD
+				(D VII)
+			)
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D V7)
+			)
+		)
+		(ASD
+			(SD iv)
+			(SD iv)
+			(SD iv)
+			(SD iv)
+		)
+		(AT
+			(T III)
+			(T III)
+		)
+		(FININTRO .)
+	)
+	(Coro
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(ASD
+			(SD VI)
+		)
+		(FINCORO .)
+	)
+	(Ins
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+				(T i)
+				(T i)
+				(T i)
+				(T i)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+				(T i)
+				(T i)
+			)
+		)
+		(CF
+			(AT
+				(T i)
+			)
+			(AD
+				(D VII)
+			)
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D V7)
+			)
+		)
+		(ASD
+			(SD iv)
+			(SD iv)
+			(SD iv)
+			(SD iv)
+		)
+		(AT
+			(T III)
+			(T III)
+		)
+		(FININS .)
+	)
+	(Coro
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(FINCORO .)
+	)
+	(Verso
+		(AT
+			(T III)
+			(T III)
+		)
+		(ASD
+			(SD VI)
+			(SD VI)
+			(SD VI)
+			(SD VI)
+		)
+		(AT
+			(T III)
+			(T III)
+			(T i)
+			(T i)
+		)
+		(CD
+			(ASD
+				(SD iv)
+				(SD iv)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(ASD
+			(SD VI)
+			(SD VI)
+			(SD VI)
+			(SD VI)
+		)
+		(AT
+			(T III)
+			(T III)
+			(T i)
+			(T i)
+		)
+		(CD
+			(ASD
+				(SD iv)
+				(SD iv)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+				(T III)
+				(T III)
+				(T III)
+				(T III)
+			)
+		)
+		(FINVERSO .)
+	)
+	(Coro
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(ASD
+			(SD VI)
+		)
+		(FINCORO .)
+	)
+	(Verso
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+			)
+		)
+		(FINVERSO .)
+	)
+	(Coro
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(ASD
+			(SD VI)
+		)
+		(FINCORO .)
+	)
+	(Ins
+		(AT
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+		)
+		(CD
+			(AD
+				(D VII)
+			)
+			(AT
+				(T III)
+				(T III)
+				(T III)
+			)
+		)
+		(FININS .)
+	)
+	(Coro
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(ASD
+			(SD VI)
+		)
+		(FINCORO .)
+	)
+	(Pregon
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(ASD
+			(SD VI)
+		)
+		(FINPREGON .)
+	)
+	(Ins
+		(AD
+			(D VII)
+			(D VII)
+			(D VII)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(ASD
+			(SD VI)
+		)
+		(AD
+			(D VII)
+			(D VII)
+			(D VII)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(ASD
+			(SD VI)
+		)
+		(FININS .)
+	)
+	(Coro
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(ASD
+			(SD VI)
+		)
+		(FINCORO .)
+	)
+	(Ins
+		(CD
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(CD
+			(ASD
+				(SD VI)
+			)
+			(AD
+				(D VII)
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(ASD
+			(SD VI)
+		)
+		(AT
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+		)
+		(FININS .)
+	)
+	(Coda
+		(AT
+			(T i)
+			(T i)
+			(T i)
+			(T i)
+		)
+		(CD
+			(AD
+				(D VII)
+			)
+			(AT
+				(T III)
+			)
+		)
+		(FINCODA .)
+	)
+)
