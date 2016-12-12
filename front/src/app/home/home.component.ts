@@ -3,60 +3,36 @@ import { Http, Response } from '@angular/http';
 import { AuthenticationService } from '../authentication';
 import { Router } from '@angular/router';
 import { NavbarComponent } from  '../navbar';
-import { WebService } from '../webservices';
+import { APIService } from '../services';
 
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  providers: [WebService, AuthenticationService]
+  providers: [APIService]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  heroes = [];
+  private showPlayer : boolean;
+  private path : string;
+  private tonality : string;
+  private tempo : string;
+
   constructor(private http: Http, private router: Router,
-    private webservice: WebService) {
-  }
-
-  ngOnInit() {
-    this.webservice.isAuthenticated();
-  }
-
-  ngOnDestroy() {
-    // Will clear when component is destroyed e.g. route is navigated away from.
-  }
-
-  public clear() {
-    this.heroes = [];
+    private api: APIService) {
+    this.showPlayer = false;
   }
 
   /**
    * Fetch the data from the python-flask backend
    */
-  public getData() {
-    this.webservice.getDataFromBackend()
-      .subscribe(
-      data => this.handleData(data),
-      err => this.logError(err),
-      () => console.log('got data')
+  public generate() {
+    this.api.generate(this.tonality, this.tempo)
+      .subscribe( path => {
+        this.showPlayer  = true;
+        this.path = path;
+      },
+      err => throw (err)
       );
-  }
-  private handleData(data: Response) {
-    if (data.status === 200) {
-      let receivedData = data.json();
-      this.heroes = receivedData['Heroes'];
-    }
-    console.log(data.json());
-  }
-
-
-  private logError(err: Response) {
-    console.log('There was an error: ' + err.status);
-    if (err.status === 0) {
-      console.error('Seems server is down');
-    }
-    if (err.status === 401) {
-      this.router.navigate(['/sessionexpired']);
-    }
   }
 }

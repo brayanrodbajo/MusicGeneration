@@ -1,0 +1,856 @@
+(S
+	(Intro
+		(AT 
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(CD
+			(AD
+				(D "V7")
+				(D "V7")
+				(D "V7")
+				(D "V7")
+			)
+			(AT
+				(T "i")
+				(T "i")
+				(T "i")
+				(T "i")
+			)
+		)
+		(ASD
+			(SD "VI")
+			(SD "VI")
+			(SD "VI")
+			(SD "VI")
+		)
+		(AD 
+			(D "IV7")
+			(D "IV7")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+		)
+		(FININTRO ".")
+	)
+	(Verso
+		(AT
+			(T "III")
+			(T "III")
+		)
+		(ASD
+			(SD "VI")
+			(SD "VI")
+		)
+		(AT
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+		)
+		(CD 
+			(ASD
+				(SD "iv")
+				(SD "iv")
+			)
+			(AD
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "III")
+				(T "III")
+			)
+		)
+		(CD
+			(ASD
+				(SD "VI")
+			)
+			(AD
+				(D "VII")
+			)
+			(AT 
+				(T "III")
+			)
+		)
+		(ASD
+			(SD "VI")
+		)
+		(AT 
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+		)
+		(CD 
+			(ASD
+				(SD "iv")
+				(SD "iv")
+			)
+			(AD
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "III")
+				(T "III")
+			)
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+		)
+		(FINVERSO ".")
+	)
+	(Coro
+		(AT 
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(CD
+			(AD 
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "i")
+				(T "i")
+				(T "i")
+				(T "i")
+			)
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "IV7")
+			(D "IV7")
+			(D "IV7")
+			(D "IV7")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+		)
+		(CD
+			(ASD 
+				(SD "VI")
+				(SD "VI")
+				(SD "VI")
+				(SD "VI")
+			)
+			(AD
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "i")
+				(T "i")
+				(T "i")
+				(T "i")
+			)
+		)
+		(CD 
+			(ASD
+				(SD "iv")
+				(SD "iv")
+				(SD "iv")
+				(SD "iv")
+			)
+			(AD
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "III")
+				(T "III")
+			)
+		)
+		(AD 
+			(D "VII")
+			(D "VII")
+		)
+		(CD
+			(ASD 
+				(SD "VI")
+				(SD "VI")
+				(SD "VI")
+				(SD "VI")
+			)
+			(AD
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "i")
+				(T "i")
+				(T "i")
+				(T "i")
+			)
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+		)
+		(FINCORO ".")
+	)
+	(Ins
+		(AT 
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(CD
+			(AD
+				(D "V7")
+				(D "V7")
+				(D "V7")
+				(D "V7")
+			)
+			(AT
+				(T "i")
+				(T "i")
+				(T "i")
+				(T "i")
+			)
+		)
+		(ASD
+			(SD "VI")
+			(SD "VI")
+			(SD "VI")
+			(SD "VI")
+		)
+		(AD 
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+		)
+		(FININS ".")
+	)
+	(Verso
+		(AT
+			(T "III")
+			(T "III")
+		)
+		(ASD
+			(SD "VI")
+			(SD "VI")
+		)
+		(AT
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+		)
+		(CD 
+			(ASD
+				(SD "iv")
+				(SD "iv")
+			)
+			(AD
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "III")
+				(T "III")
+			)
+		)
+		(CD
+			(ASD
+				(SD "VI")
+			)
+			(AD
+				(D "VII")
+			)
+			(AT 
+				(T "III")
+			)
+		)
+		(ASD
+			(SD "VI")
+		)
+		(AT 
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+		)
+		(CD 
+			(ASD
+				(SD "iv")
+				(SD "iv")
+			)
+			(AD
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "III")
+				(T "III")
+			)
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+		)
+		(FINVERSO ".")
+	)
+	(Coro
+		(AT 
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(CD
+			(AD 
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "i")
+				(T "i")
+				(T "i")
+				(T "i")
+			)
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "IV7")
+			(D "IV7")
+			(D "IV7")
+			(D "IV7")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+		)
+		(CD
+			(ASD 
+				(SD "VI")
+				(SD "VI")
+				(SD "VI")
+				(SD "VI")
+			)
+			(AD
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "i")
+				(T "i")
+				(T "i")
+				(T "i")
+			)
+		)
+		(CD 
+			(ASD
+				(SD "iv")
+				(SD "iv")
+				(SD "iv")
+				(SD "iv")
+			)
+			(AD
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "III")
+				(T "III")
+			)
+		)
+		(AD 
+			(D "VII")
+			(D "VII")
+		)
+		(CD
+			(ASD 
+				(SD "VI")
+				(SD "VI")
+				(SD "VI")
+				(SD "VI")
+			)
+			(AD
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+				(D "VII")
+			)
+			(AT 
+				(T "i")
+				(T "i")
+				(T "i")
+				(T "i")
+			)
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+			(D "VII")
+			(D "VII")
+		)
+		(FINCORO ".")
+	)
+	(Ins
+		(AT 
+			(T "III")
+			(T "III")
+		)
+		(AD 
+			(D "VII")
+			(D "VII")
+		)
+		(CD
+			(ASD
+				(SD "VI")
+				(SD "VI")
+				(SD "iv")
+			)
+			(AD 
+				(D "VII")
+			)
+			(AT 
+				(T "III")
+				(T "III")
+			)
+		)
+		(AD 
+			(D "VII")
+			(D "VII")
+		)
+		(CD
+			(ASD
+				(SD "VI")
+				(SD "VI")
+				(SD "iv")
+			)
+			(AD 
+				(D "VII")
+			)
+			(AT 
+				(T "III")
+				(T "III")
+			)
+		)
+		(CD
+			(AD
+				(D "V7")
+			)
+			(AT 
+				(T "i")
+			)
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+		)
+		(ASD
+			(SD "VI")
+			(SD "VI")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+		)
+		(FININS ".")
+	)
+	(Pregon
+		(AT
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+		)
+		(CD 
+			(ASD
+				(SD "iv")
+			)
+			(AD
+				(D "VII")
+			)
+			(AT
+				(T "III")
+				(T "III")
+			)
+		)
+		(AT
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+		)
+		(CD 
+			(ASD
+				(SD "iv")
+			)
+			(AD
+				(D "VII")
+			)
+			(AT
+				(T "III")
+				(T "III")
+			)
+		)
+		(AT
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+		)
+		(CD 
+			(ASD
+				(SD "iv")
+			)
+			(AD
+				(D "VII")
+			)
+			(AT
+				(T "III")
+				(T "III")
+			)
+		)
+		(AT
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+		)
+		(CD 
+			(ASD
+				(SD "iv")
+			)
+			(AD
+				(D "VII")
+			)
+			(AT
+				(T "III")
+				(T "III")
+			)
+		)
+		(AT
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(ASD
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+			(SD "iv")
+		)
+		(AD
+			(D "VII")
+			(D "VII")
+		)
+		(CD 
+			(ASD
+				(SD "iv")
+			)
+			(AD
+				(D "VII")
+			)
+			(AT
+				(T "III")
+				(T "III")
+			)
+		)
+		(FINPREGON ".")
+	)
+	(Ins
+		(AT
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+			(T "III")
+		)
+		(FININS ".")
+	)
+	(Coda
+		(AD
+			(D "VII")
+			(D "VII")
+		)
+		(ASD
+			(SD "VI")
+			(SD "VI")
+		)
+		(CD
+			(ASD
+				(SD "iv")
+			)
+			(AD 
+				(D "VII")
+			)
+			(AT 
+				(T "III")
+				(T "III")
+			)
+		)
+		(CD 
+			(AD
+				(D "VII")
+			)
+			(AT
+				(T "i")
+			)
+		)
+		(AD 
+			(D "VII")
+			(D "VII")
+		)
+		(ASD
+			(SD "VI")
+			(SD "VI")
+		)
+		(AT
+			(T "III")
+			(T "III")
+		)
+		(FINCODA ".")
+	)
+)

@@ -1,116 +1,140 @@
-<navbar></navbar>
-<div class="row top-buffer">
-  <!-- uncomment code for absolute positioning tweek see top comment in css -->
-  <!-- <div class="absolute-wrapper"> </div> -->
-  <!-- Menu -->
-  <div class="side-menu">
+<!DOCTYPE hmtl>
 
-    <nav class="navbar navbar-default" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <div class="brand-wrapper">
-          <!-- Hamburger -->
-          <button type="button" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+<html>
+<head>
+<title>is only a test</title>
 
-          <!-- Brand -->
-          <div class="brand-name-wrapper">
-            <a class="navbar-brand clickable">
-                    Brand
-                </a>
-          </div>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-          <!-- Search -->
-          <a data-toggle="collapse" href="#search" class="btn btn-default" id="search-trigger">
-            <span class="glyphicon glyphicon-search"></span>
-          </a>
 
-          <!-- Search body -->
-          <div id="search" class="panel-collapse collapse">
-            <div class="panel-body">
-              <form class="navbar-form" role="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default "><span class="glyphicon glyphicon-ok"></span></button>
-              </form>
-            </div>
-          </div>
-        </div>
+<style type="text/css">
+/* escritorio grande*/
+	@media(min-width: 1200px){
+		/*+body{color: red;}*/
+	}
+	/* escritorio pequeño tablet*/
+	@media(min-width: 768px )and (max-width: 979px){
+		body{color: green;}
+	}
+	/* escritorio tablet smartphone*/
+	@media(max-width: 768px){
+		body{color: blue;}
+	}
+	/* escritorio smartpone*/
+	@media(max-width: 480px){
+		body{color: yellow;}
+	}
+	.text-big{
+		font-size: 300px;
+		line-height: 320px;
+	}
+	#cabeza {
+		height: 5%;
+	}
+	#espacio_inicial {
+		height: 6%;
+	}
+	#espacio{
+		height: 6%;
+	}
+	#img-container{
+			background: white;
+			width: 300px;
+			border-radius: 30px 30px 30px 30px;
+	}
 
-      </div>
+	#footer-container{
+			background: #051244;
+	}
 
-      <!-- Main Menu -->
-      <div class="side-menu-container">
-        <ul class="nav navbar-nav">
 
-          <li><a class="clickable"><span class="glyphicon glyphicon-send"></span> Link</a></li>
-          <li class="active"><a class="clickable"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
-          <li><a class="clickable"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
+</style>
+</head>
+<body background="img/background.png">
+	<div id="espacio_inicial"></div>
 
-          <!-- Dropdown-->
-          <li class="panel panel-default" id="dropdown">
-            <a data-toggle="collapse" href="#dropdown-lvl1">
-              <span class="glyphicon glyphicon-user"></span> Sub Level <span class="caret"></span>
-            </a>
+	<div class="row-fluid clearfix">
+		<div class="span12 clearfix" >
+			<div id="cabeza" class="text-center clearfix" style="">
+				<font SIZE=8 COLOR=white><B>NOMBRE PROYECTO</B></font>
+				<br>
+				<font SIZE=3 COLOR=white>Desarrollado por: Brayan Rodriguez</font>
+			</div>
+		</div>
+	</div>
 
-            <!-- Dropdown level 1 -->
-            <div id="dropdown-lvl1" class="panel-collapse collapse">
-              <div class="panel-body">
-                <ul class="nav navbar-nav">
-                  <li><a class="clickable">Link</a></li>
-                  <li><a class="clickable">Link</a></li>
-                  <li><a class="clickable">Link</a></li>
+	<div id="espacio"></div>
 
-                  <!-- Dropdown level 2 -->
-                  <li class="panel panel-default" id="dropdown">
-                    <a data-toggle="collapse" href="#dropdown-lvl2">
-                      <span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
-                    </a>
-                    <div id="dropdown-lvl2" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        <ul class="nav navbar-nav">
-                          <li><a class="clickable">Link</a></li>
-                          <li><a class="clickable">Link</a></li>
-                          <li><a class="clickable">Link</a></li>
-                        </ul>
-                      </div>
+	<div id="img-container" class="col-md-10 col-md-offset-1 text-center clearfix container" >
+		<br>
+		<br>
+		<img src="img/semicorchea2.png" alt="" style="height:70px">
+		<br>
+		<br>
+		<br>
+
+		<div class="row-fuild" style="width:100%;">
+			<label for="tonality" style="margin-bottom: 0px">Tonalidad:</label>
+			<input type="text" id="tonality" style="width:80%; height:30px">
+		</div>
+
+		<div class="row-fuild" style="width:100%;">
+			<label for="tempo" style="margin-bottom: 0px">Tempo:</label>
+			<input type="text" id="tempo" style="width:80%; height:30px">
+		</div>
+
+		<div class="row-fluid">
+			<label style="margin-bottom: 0px">Agregar instrumentos:</label>
+		</div>
+
+		<div class="row-fluid" style=" padding-top: 0px">
+			<div class="btn-group  clearfix" data-toggle="buttons-checkbox" style="width:80%;">
+				<button type="button" class="btn btn-primary" style='width:50%; height:30px'>
+					Piano
+				</button>
+				<button type="button" class="btn btn-primary" style='width:50%; height:30px '>
+					Bajo electrico
+				</button>
+
+			</div>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="row-fluid">
+			<input (click)="generate()" type="submit" value="Enviar" class="btn" style='width:50%;'>
+		</div>
+
+		<br>
+		<br>
+		<audio *ngIf="showPlay" controls>
+			<source src="{{path}}" type="audio/wav">
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+
+	<br>
+	<br>
+
+	<footer id="footer-container" class="text-center">
+                <div class="footer-above">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-col col-md-4">
+                               <br>
+                            </div>
+                        </div>
                     </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
+                </div>
+            </footer>
 
-          <li><a class="clickable"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
 
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </nav>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-  </div>
-
-  <!-- Main Content -->
-  <div class="container-fluid">
-    <div class="side-body">
-      <h1> Main Content here </h1>
-      <pre> Resize the screen to view the left slide menu </pre>
-      <button type="button" (click)="getData()" class="btn btn-primary">Get data from backend</button>
-      <button type="button" (click)="clear()" class="btn btn-danger">Clear</button>
-      <div class="panel">
-        <ul>
-          <li *ngFor="let hero of heroes; let i=index">
-            <p>{{hero}}</p>
-          </li>
-        </ul>
-
-      </div>
-
-    </div>
-  </div>
-</div>
+</body>
+</html>
