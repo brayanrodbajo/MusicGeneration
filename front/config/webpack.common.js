@@ -9,23 +9,19 @@ const helpers = require('./helpers');
  * Webpack Plugins
  */
 // problem with copy-webpack-plugin
-const AssetsPlugin = require('assets-webpack-plugin');
-const NormalModuleReplacementPlugin = require('webpack/lib/NormalModuleReplacementPlugin');
-const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
-const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 const HtmlElementsPlugin = require('./html-elements-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+const AssetsPlugin = require('assets-webpack-plugin');
+const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
 
 /*
  * Webpack Constants
  */
 const HMR = helpers.hasProcessFlag('hot');
 const METADATA = {
-  title: 'Angular2 Webpack Starter by @gdi2290 from @AngularClass',
+  title: 'SOC UI Template',
   baseUrl: '/',
   isDevServer: helpers.isWebpackDevServer()
 };
@@ -40,13 +36,20 @@ module.exports = function(options) {
   return {
 
     /*
+     * Static metadata for index.html
+     *
+     * See: (custom attribute)
+     */
+    metadata: METADATA,
+
+    /*
      * Cache generated modules and chunks to improve performance for multiple incremental builds.
      * This is enabled by default in watch mode.
      * You can pass false to disable it.
      *
      * See: http://webpack.github.io/docs/configuration.html#cache
      */
-    //cache: false,
+     //cache: false,
 
     /*
      * The entry point for the bundle
@@ -57,8 +60,8 @@ module.exports = function(options) {
     entry: {
 
       'polyfills': './src/polyfills.browser.ts',
-      'vendor': './src/vendor.browser.ts',
-      'main': './src/main.browser.ts'
+      'vendor':    './src/vendor.browser.ts',
+      'main':      './src/main.browser.ts'
 
     },
 
@@ -74,10 +77,10 @@ module.exports = function(options) {
        *
        * See: http://webpack.github.io/docs/configuration.html#resolve-extensions
        */
-      extensions: ['.ts', '.js', '.json'],
+      extensions: ['', '.ts', '.js', '.json'],
 
       // An array of directory names to be resolved to the current directory
-      modules: [helpers.root('src'), helpers.root('node_modules')],
+      modules: [helpers.root('src'), 'node_modules'],
 
     },
 
@@ -88,7 +91,34 @@ module.exports = function(options) {
      */
     module: {
 
-      rules: [
+      /*
+       * An array of applied pre and post loaders.
+       *
+       * See: http://webpack.github.io/docs/configuration.html#module-preloaders-module-postloaders
+       */
+      preLoaders: [
+        {
+          test: /\.ts$/,
+          loader: 'string-replace-loader',
+          query: {
+            search: '(System|SystemJS)(.*[\\n\\r]\\s*\\.|\\.)import\\((.+)\\)',
+            replace: '$1.import($3).then(mod => (mod.__esModule && mod.default) ? mod.default : mod)',
+            flags: 'g'
+          },
+          include: [helpers.root('src')]
+        },
+
+      ],
+
+      /*
+       * An array of automatically applied loaders.
+       *
+       * IMPORTANT: The loaders here are resolved relative to the resource which they are applied to.
+       * This means they are not resolved relative to the configuration file.
+       *
+       * See: http://webpack.github.io/docs/configuration.html#module-loaders
+       */
+      loaders: [
 
         /*
          * Typescript loader support for .ts and Angular 2 async routes via .async.ts
@@ -99,11 +129,10 @@ module.exports = function(options) {
          */
         {
           test: /\.ts$/,
-          use: [
+          loaders: [
             '@angularclass/hmr-loader?pretty=' + !isProd + '&prod=' + isProd,
             'awesome-typescript-loader',
-            'angular2-template-loader',
-            'angular2-router-loader'
+            'angular2-template-loader'
           ],
           exclude: [/\.(spec|e2e)\.ts$/]
         },
@@ -115,7 +144,7 @@ module.exports = function(options) {
          */
         {
           test: /\.json$/,
-          use: 'json-loader'
+          loader: 'json-loader'
         },
 
         /*
@@ -125,7 +154,7 @@ module.exports = function(options) {
          */
         {
           test: /\.css$/,
-          use: ['to-string-loader', 'css-loader']
+          loaders: ['to-string-loader', 'css-loader']
         },
 
         /* Raw loader support for *.html
@@ -135,19 +164,57 @@ module.exports = function(options) {
          */
         {
           test: /\.html$/,
-          use: 'raw-loader',
+          loader: 'raw-loader',
           exclude: [helpers.root('src/index.html')]
         },
 
         /* File loader for supporting images, for example, in CSS files.
-         */
+        */
         {
           test: /\.(jpg|png|gif)$/,
-          use: 'file-loader'
+          loader: 'file'
         },
 
+
+        {
+          test: /.less$/,
+          exclude: /node_modules/,
+          loader: 'raw-loader!less-loader'
+        },
+
+        {
+          test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "url?limit=10000&minetype=application/font-woff"
+        },
+        {
+          test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "url?limit=10000&minetype=application/font-woff"
+        },
+        {
+          test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "url?limit=10000&minetype=application/octet-stream"
+        },
+        {
+          test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "file"
+        },
+        {
+          test: /\.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
+          loader: 'file-loader'
+        }
       ],
 
+      postLoaders: [
+        {
+          test: /\.js$/,
+          loader: 'string-replace-loader',
+          query: {
+            search: 'var sourceMappingUrl = extractSourceMappingUrl\\(cssText\\);',
+            replace: 'var sourceMappingUrl = "";',
+            flags: 'g'
+          }
+        }
+      ]
     },
 
     /*
@@ -177,7 +244,7 @@ module.exports = function(options) {
        * See: https://webpack.github.io/docs/list-of-plugins.html#commonschunkplugin
        * See: https://github.com/webpack/docs/wiki/optimization#multi-page-app
        */
-      new CommonsChunkPlugin({
+      new webpack.optimize.CommonsChunkPlugin({
         name: ['polyfills', 'vendor'].reverse()
       }),
 
@@ -190,11 +257,8 @@ module.exports = function(options) {
        */
       new ContextReplacementPlugin(
         // The (\\|\/) piece accounts for path separators in *nix and Windows
-        /angular(\\|\/)core(\\|\/)src(\\|\/)linker/,
-        helpers.root('src'), // location of your src
-        {
-          // your Angular Async Route paths relative to this root directory
-        }
+        /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
+        helpers.root('src') // location of your src
       ),
 
       /*
@@ -208,10 +272,15 @@ module.exports = function(options) {
       new CopyWebpackPlugin([{
         from: 'src/assets',
         to: 'assets'
-      }, {
-        from: 'src/meta'
+      },
+      {
+        from: 'src/app/vendor',
+        to: 'app/vendor'
+      },
+      {
+        from: 'src/app/css/app.css',
+        to: 'app/css/app.css'
       }]),
-
 
       /*
        * Plugin: HtmlWebpackPlugin
@@ -223,25 +292,11 @@ module.exports = function(options) {
        */
       new HtmlWebpackPlugin({
         template: 'src/index.html',
-        title: METADATA.title,
-        chunksSortMode: 'dependency',
-        metadata: METADATA,
-        inject: 'head'
+        chunksSortMode: 'dependency'
       }),
 
       /*
-       * Plugin: ScriptExtHtmlWebpackPlugin
-       * Description: Enhances html-webpack-plugin functionality
-       * with different deployment options for your scripts including:
-       *
-       * See: https://github.com/numical/script-ext-html-webpack-plugin
-       */
-      new ScriptExtHtmlWebpackPlugin({
-        defaultAttribute: 'defer'
-      }),
-
-      /*
-       * Plugin: HtmlElementsPlugin
+       * Plugin: HtmlHeadConfigPlugin
        * Description: Generate html tags based on javascript maps.
        *
        * If a publicPath is set in the webpack output configuration, it will be automatically added to
@@ -266,34 +321,12 @@ module.exports = function(options) {
         headTags: require('./head-config.common')
       }),
 
-      /**
-       * Plugin LoaderOptionsPlugin (experimental)
-       *
-       * See: https://gist.github.com/sokra/27b24881210b56bbaff7
-       */
-      new LoaderOptionsPlugin({}),
+      new webpack.ProvidePlugin({
+        jQuery: 'jquery',
+        $: 'jquery',
+        jquery: 'jquery'
+      })
 
-      // Fix Angular 2
-      new NormalModuleReplacementPlugin(
-        /facade(\\|\/)async/,
-        helpers.root('node_modules/@angular/core/src/facade/async.js')
-      ),
-      new NormalModuleReplacementPlugin(
-        /facade(\\|\/)collection/,
-        helpers.root('node_modules/@angular/core/src/facade/collection.js')
-      ),
-      new NormalModuleReplacementPlugin(
-        /facade(\\|\/)errors/,
-        helpers.root('node_modules/@angular/core/src/facade/errors.js')
-      ),
-      new NormalModuleReplacementPlugin(
-        /facade(\\|\/)lang/,
-        helpers.root('node_modules/@angular/core/src/facade/lang.js')
-      ),
-      new NormalModuleReplacementPlugin(
-        /facade(\\|\/)math/,
-        helpers.root('node_modules/@angular/core/src/facade/math.js')
-      ),
     ],
 
     /*
@@ -303,7 +336,7 @@ module.exports = function(options) {
      * See: https://webpack.github.io/docs/configuration.html#node
      */
     node: {
-      global: true,
+      global: 'window',
       crypto: 'empty',
       process: true,
       module: false,
