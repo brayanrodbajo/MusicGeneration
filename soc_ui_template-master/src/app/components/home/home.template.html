@@ -1,0 +1,84 @@
+<div id="espacio_inicial"></div>
+
+<div class="row-fluid clearfix">
+    <div class="span12 clearfix" >
+        <div id="cabeza" class="cabeza text-center clearfix" style="">
+            <font SIZE=6 COLOR=white><B>USO DE ANLIZADORES SINTÁCTICOS COMO APOYO A LA COMPOSICIÓN MUSICAL, TOMANDO COMO BASE CANCIONES DEL GRUPO NICHE</B></font>
+            <br>
+            <font SIZE=3 COLOR=white>Desarrollado por: Brayan Rodriguez</font>
+        </div>
+    </div>
+</div>
+
+<div class="espacio"></div>
+
+<div id="img_container" class="img_container col-md-10 col-md-offset-1 text-center clearfix container" >
+    <br>
+    <br>
+    <img src="img/semicorchea2.png" alt="" style="height:70px">
+    <br>
+    <br>
+    <br>
+
+    <div class="row-fuild" style="width:100%;">
+        <label for="tonality" style="margin-bottom: 0px">Tonalidad:</label>
+        <input type="text" id="tonality" [(ngModel)]="tonality" style="width:80%; height:30px">
+    </div>
+
+    <div class="row-fuild" style="width:100%;">
+        <label for="tempo" style="margin-bottom: 0px">Tempo:</label>
+        <input type="text" id="tempo" [(ngModel)]="tempo" style="width:80%; height:30px">
+    </div>
+
+    <!--<div class="row-fluid">
+        <label style="margin-bottom: 0px">Agregar instrumentos:</label>
+    </div>
+
+    <div class="row-fluid" style=" padding-top: 0px">
+        <div class="btn-group  clearfix" data-toggle="buttons-checkbox" style="width:80%;">
+            <button type="button" class="btn btn-primary" style='width:50%; height:30px'>
+                Piano
+            </button>
+            <button type="button" class="btn btn-primary" style='width:50%; height:30px '>
+                Bajo electrico
+            </button>
+
+        </div>
+    </div>-->
+
+    <br>
+    <br>
+
+    <div class="row-fluid">
+        <input [disabled]="inCommunication" (click)="generate()" type="submit" value="Generar" class="btn" style='width:50%;'>
+    </div>
+
+    <br>
+    <br>
+    <div *ngIf="showPlayer" class="row-fluid">
+        <audio controls>
+            <source src="static/combined.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <br>
+        <button type="button" class="btn btn-secondary" onClick="window.location.href='static/bass_salsa.pdf'"> Descargar Partitura del Bajo Eléctrico. </button>
+        <button type="button" class="btn btn-secondary" onClick="window.location.href='static/piano_salsa.pdf'"> Descargar Partitura del Piano. </button>
+    </div>
+</div>
+
+<br>
+<br>
+
+<footer id="footer_container" class="footer_container text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                   <br>
+                   Escuela de Ingeniería de Sistemas y Computación - Universidad del Valle
+                   2017
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

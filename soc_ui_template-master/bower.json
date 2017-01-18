@@ -1,0 +1,13 @@
+{
+  "name": "soc_ui_template",
+  "homepage": "https://github.com/brayanrodbajo/MusicGeneration",
+  "main": "src/app/",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "jquery": "~2.1.3"
+  }
+}

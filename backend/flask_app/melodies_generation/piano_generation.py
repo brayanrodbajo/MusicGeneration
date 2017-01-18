@@ -18,6 +18,7 @@ def annotate_rythm_variations(chords, n_var):
 
 # Returns the dictionary with the diferent grades of the tonality
 def getGrades(ton):
+    print("ton "+ton)
     if ton=='Ces':
         return {
           'i':'ces',

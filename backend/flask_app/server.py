@@ -1,7 +1,8 @@
 """Entry point for the server application."""
 
-from flask import request, Flask
+from flask import request, Flask, Response, send_file, make_response
 from nltk import PCFG, Nonterminal
+import json
 import os, subprocess
 from .chords_generation.learn_trees_music_generate import remove_symbols, generate_sample
 from .melodies_generation.bass_generation import write_bass_ly, convert_ly_notation_bass, put_p
@@ -16,6 +17,9 @@ def generate():
     print ('generate')
     tonality = str(request.args.get('tonality'))
     tempo = str(request.args.get('tempo'))
+    dest_path = '../soc_ui_template-master/src/static/'
+    print (tonality)
+    print (tempo)
     grammar_file = open('flask_app/grammar/pcfg.txt', 'r')
     grammar_str = grammar_file.read()
     grammar_file.close()
@@ -73,17 +77,31 @@ def generate():
     #to convert midi into wav
     with open(os.devnull, 'wb') as devnull:
         subprocess.check_call(['timidity', file_name_percusion+'.midi', '-Ow'], stdout=devnull, stderr=subprocess.STDOUT)
-    combine('piano_bass.wav', file_name_percusion+'.wav', 'combined.wav')
-
-    cwd = os.getcwd()
-    print (cwd)
-    return cwd+'/combined.wav', 200
+    file_name_combined = 'combined.wav'
+    combine('piano_bass.wav', file_name_percusion+'.wav', file_name_combined)
+    #to move to front end
+    with open(os.devnull, 'wb') as devnull:
+        subprocess.check_call(['mv', file_name_combined, dest_path], stdout=devnull, stderr=subprocess.STDOUT)
+        subprocess.check_call(['mv', file_name_bass + '.pdf', dest_path], stdout=devnull, stderr=subprocess.STDOUT)
+        subprocess.check_call(['mv', file_name_piano + '.pdf', dest_path], stdout=devnull, stderr=subprocess.STDOUT)
+    # combined_file = open('combined.wav', 'rb')
+    # combined_content = combined_file.read()
+    # resp = make_response(combined_content)
+    # combined_file.close()
+    # resp = make_response(send_file('../combined.wav'))
+    resp_json = json.dumps({'error': False})
+    resp = Response(resp_json)
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    # resp.headers['Content-Type'] = 'audio/wav'
+    # resp.headers['Content-Disposition'] = 'attachment;filename=combined.wav'
+    return resp
+    # return resp
 
 
 def main():
     """Main entry point of the app."""
     try:
-        app.run(host='0.0.0.0', debug=True, port=8080, use_reloader=True)
+        app.run(host='0.0.0.0', debug=True, port=8000, use_reloader=True)
     except Exception as exc:
         print(exc.message)
     finally:
