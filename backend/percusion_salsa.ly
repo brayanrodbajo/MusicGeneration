@@ -5,32 +5,32 @@
  copyright = "Brayan Rodríguez"
 }
 
-global = {\key f \minor\time 2/2
+global = {\key a \minor\time 2/2
 }
 
  congas = \drummode {
 \global
-\repeat volta 103 {cgh8 cgho ssh cgho cgh cgho cglo4 cgh8 cgho ssh cgho cgh cgho cglo cglo}
+\repeat volta 90 {cgh8 cgho ssh cgho cgh cgho cglo4 cgh8 cgho ssh cgho cgh cgho cglo cglo}
 }
 
  tim = \drummode {
 \global
-\repeat volta 103 {cl4. cl8~ cl4 cl4~ cl4 cl4 cl2}
+\repeat volta 90 {cl4. cl8~ cl4 cl4~ cl4 cl4 cl2}
 }
 
  cam = \drummode {
 \global
-\repeat volta 103 {cb4 cl8 cl cb4 cl8 cl cb4 cl8 cl cb4 cl}
+\repeat volta 90 {cb4 cl8 cl cb4 cl8 cl cb4 cl8 cl cb4 cl}
 }
 
  gui = \drummode {
 \global
-\repeat volta 103 {guil4 guis8 guis guil4 guis8 guis guil4 guis8 guis guil4 guis8 guis}
+\repeat volta 90 {guil4 guis8 guis guil4 guis8 guis guil4 guis8 guis guil4 guis8 guis}
 }
 
  mar = \drummode {
 \global
-\repeat volta 103 {cab8 mar cab cab cab mar cab cab cab mar cab cab cab mar cab cab}
+\repeat volta 90 {cab8 mar cab cab cab mar cab cab cab mar cab cab cab mar cab cab}
 }
 
  congasPart = \new DrumStaff \with {

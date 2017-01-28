@@ -17,7 +17,7 @@ def generate():
     print ('generate')
     tonality = str(request.args.get('tonality'))
     tempo = str(request.args.get('tempo'))
-    dest_path = '../soc_ui_template-master/src/static/'
+    dest_path = '../front/src/static/'
     print (tonality)
     print (tempo)
     grammar_file = open('flask_app/grammar/pcfg.txt', 'r')
@@ -89,7 +89,10 @@ def generate():
     # resp = make_response(combined_content)
     # combined_file.close()
     # resp = make_response(send_file('../combined.wav'))
-    resp_json = json.dumps({'error': False})
+    grammar_file = open('flask_app/chords_generation/chosen_prod.txt', 'r')
+    chosen_prod = grammar_file.read()
+    grammar_file.close()
+    resp_json = json.dumps({'error': False, 'components': chosen_prod})
     resp = Response(resp_json)
     resp.headers['Access-Control-Allow-Origin'] = '*'
     # resp.headers['Content-Type'] = 'audio/wav'

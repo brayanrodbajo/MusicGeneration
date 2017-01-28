@@ -3,7 +3,7 @@
 <div class="row-fluid clearfix">
     <div class="span12 clearfix" >
         <div id="cabeza" class="cabeza text-center clearfix" style="">
-            <font SIZE=6 COLOR=white><B>USO DE ANLIZADORES SINTÁCTICOS COMO APOYO A LA COMPOSICIÓN MUSICAL, TOMANDO COMO BASE CANCIONES DEL GRUPO NICHE</B></font>
+            <font SIZE=6 COLOR=white><B>USO DE ANALIZADORES SINTÁCTICOS COMO APOYO A LA COMPOSICIÓN MUSICAL, TOMANDO COMO BASE EL MODELO MUSICAL DEL GRUPO NICHE</B></font>
             <br>
             <font SIZE=3 COLOR=white>Desarrollado por: Brayan Rodriguez</font>
         </div>
@@ -56,6 +56,7 @@
     <br>
     <br>
     <div *ngIf="showPlayer" class="row-fluid">
+	{{components}}
         <audio controls>
             <source src="static/combined.wav" type="audio/wav">
             Your browser does not support the audio element.

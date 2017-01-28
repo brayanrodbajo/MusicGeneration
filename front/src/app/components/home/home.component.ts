@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import * as FileSaver from 'file-saver';
 import { APIService } from '../../services';
 
 @Component({
@@ -17,6 +16,7 @@ export class HomeComponent {
     private tempo : string;
     private inCommunication : boolean;
     private track: string;
+    private components: string;
 
     constructor(private http: Http, private api: APIService) {
         this.showPlayer = false;
@@ -34,6 +34,7 @@ export class HomeComponent {
             resp => {
                 this.inCommunication = false;
                 this.showPlayer  = true;
+		this.components = resp.components;
                 console.log(resp);
                 // const mediaType = 'audio/wav';
                 // const blob = new Blob([resp._body], {type: mediaType});

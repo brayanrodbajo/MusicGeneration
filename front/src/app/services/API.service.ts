@@ -41,6 +41,6 @@ export class APIService {
         url: url,
         search: params,
         body: body
-      }));
+      })).map(res => res.json());
     }
 }

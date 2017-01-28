@@ -1,5 +1,5 @@
 from pydub import AudioSegment
-import pyglet
+# import pyglet
 
 def combine(file_name_one, file_name_two, file_name_combined):
     sound1= AudioSegment.from_file(file_name_one)
@@ -8,11 +8,11 @@ def combine(file_name_one, file_name_two, file_name_combined):
 
     combined.export(file_name_combined, format='wav')
 
-def play(file_name):
-    music = pyglet.resource.media(file_name)
-    music.play()
+# def play(file_name):
+#    music = pyglet.resource.media(file_name)
+#    music.play()
 
-    pyglet.app.run()
+#    pyglet.app.run()
 
 
 if __name__ == '__main__':

@@ -25,7 +25,6 @@ def generate_sample(grammar, items, frags):
         # print ("nonterminal ",isinstance(item, Nonterminal))
         if isinstance(item, Nonterminal):
             prods = grammar.productions(lhs=item)
-            # print ("prods ", prods)
             probs = []
             for prod in prods:
                 probs.append(prod.prob())
@@ -39,7 +38,11 @@ def generate_sample(grammar, items, frags):
                 raise("Probabilities don't sum even near to 1.0")
             chosen_prod = prods[0] #Inicializing
             chosen_prod = choice(prods, p= probs)
-            # print ("chosen prod ", chosen_prod)
+            if str(item) == 'S':
+                print ("chosen prod ", chosen_prod.rhs())
+                grammar_file = open("chosen_prod.txt", "w")
+                grammar_file.write(str(chosen_prod.rhs()))
+                grammar_file.close()
             generate_sample(grammar, chosen_prod.rhs(), frags) #It passes the right hand items of the chosen production and the same grammar
         else:
             frags.append(item)
