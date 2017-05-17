@@ -9,7 +9,7 @@ from numpy.random import choice
 import glob, os
 
 
-#Removing the + symbol from the grammar to recognize it from the fromstring 
+#Removing the + symbol from the grammar to recognize it from the fromstring
 def remove_symbols(text):
     text = text.replace('+', '')
     return text
@@ -36,7 +36,7 @@ def generate_sample(grammar, items, frags):
                 # print ("no dio 1")
             else:
                 raise("Probabilities don't sum even near to 1.0")
-            chosen_prod = prods[0] #Inicializing
+            chosen_prod = prods[0] #Initializing
             chosen_prod = choice(prods, p= probs)
             if str(item) == 'S':
                 print ("chosen prod ", chosen_prod.rhs())
