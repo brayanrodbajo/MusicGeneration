@@ -1,10 +1,10 @@
-# angular2-flask
+# MusicGeneration
 
-Simple angular2 app with python-flask backend (for learning angular2)
+Angular2 application for generating Salsa music through NLP concepts.
 
 ## Info
 
-1.  `backend` directory contains the flask backend with simple authentication methods
+1.  `backend` directory contains the flask backend with the methods that do the generation process.
 
 2.  `front` directory contains the angular2 frontend based on [angular-webpack-starter](https://github.com/AngularClass/angular2-webpack-starter)
 
@@ -13,16 +13,15 @@ Simple angular2 app with python-flask backend (for learning angular2)
 1.  Clone the repo
 
     ```bash
-    git clone --depth 1 https://github.com/ansrivas/angular2-flask.git
-    cd angular2-flask
+    git clone https://github.com/brayanrodbajo/MusicGeneration.git
     ```
 
 2.  Install the backend related requirements and run. The following will start a flask-server on `localhost:8080`
 
     ```bash
     cd backend
-    sudo pip install -r requirements.txt
-    python run.py
+    sh install.sh
+    python3 run.py
     ```
 
 3.  Install frontend related dependencies
@@ -33,31 +32,11 @@ Simple angular2 app with python-flask backend (for learning angular2)
     ```bash
     cd front
 
-    # install global dependencies
-    npm install webpack-dev-server rimraf webpack typescript -g
-
     # install project related dependencies
     npm install
 
     # run server
-    npm run server:dev:hmr
+    npm run server
     ```
 
-4.  Now navigate to `http://localhost:3000` and login using default credential : `admin:admin`
-
-### Docker support:
-
-The current build is using `nginx` to serve static files. The pre-requisite is to run the following commands and then use `docker-compose`
-
-1. Build the frontend ( production build )
-
-  ```bash
-  cd front
-  npm install webpack-dev-server rimraf webpack typescript -g
-  npm install
-  npm run build:prod
-  ```
-  
-4. Now, in project root directory execute `docker-compose up`
-
-3. Navigate to `http://localhost:3000` and login using `admin:admin`  
+4.  Now navigate to `http://localhost:3000` 
