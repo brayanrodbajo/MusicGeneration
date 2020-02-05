@@ -1,9 +1,19 @@
 #!/bin/bash
+
+sudo apt-get install python-dev
+sudo apt-get install python3-dev
+sudo apt-get install libevent-dev
+
+
+if ! which gcc
+        then sudo apt-get install gcc
+fi
+
 if ! which python3
 	then sudo apt-get install python3
 fi
 
-pip3 install -r requirements.txt 
+python3 -m pip install -r requirements.txt 
 
 
 if ! which lilypond
